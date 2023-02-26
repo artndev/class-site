@@ -10,12 +10,12 @@ CMD (проверить наличие пакета):
 
 ### УСТАНОВИТЕ ЗАВИСИМОСТИ ПРОЕКТА!
 
-Powershell (текущая дериктория):
+CMD (текущая дериктория):
 <p><code>>> npm i</code></p>
 
 ### ЗАПУСК SASS!
 
-Powershell (текущая дериктория):
+CMD (текущая дериктория):
 <p><code>>> gulp sass</code></p>
 
 [В случае возникновения каких-либо проблем, посмотрите подробный видео-урок!](https://www.youtube.com/watch?v=EtbZQ6qWuJ4&list=PLOJVUEZUZdVO2BUTEF9QclYPrFf3ifsfp&index=19&t=800s)
