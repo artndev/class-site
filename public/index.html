@@ -12,68 +12,94 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    
-    <header>
-        <nav class="navigation container__wrapper">
-            <div class="header__container">
-                <svg viewBox="0 0 100 80" class="header__menu-burger" style="fill: white;" width="40" height="40">
-                    <rect width="100" height="8" class="line"></rect>
-                    <rect y="30" width="100" height="8" class="line"></rect>
-                    <rect y="60" width="100" height="8" class="line"></rect>
-                </svg>
-                <div class="header__item">
-                    <a href="./index.html">Главная</a>
-                </div>
-                <div class="header__item">
-                    <a href="./about.html">О нас</a>
-                </div>
-                <div class="header__item">
-                    <a href="">Наши достижения</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <div class="hero">
-                <img src="./img/7B.jpg" class="hero__logo" alt="7B">
-                <span class="hero__desc">
-                    <b>Наш 3 "Б"</b>
-                    <p>
-                       Дружные и активные ребята! Поддержим и поможем, 
-                       ведь главное настрой, а он у нас есть! Любим изучать новое,
-                       творить, вооплащать мысли в реальную жизнь - это у нас хорошо получается!
-                    </p>
-                </span>
-                <div class="arrow">
-                    <img src="./img/next-arrow.png" alt="next-arrow">
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="main__container">
-                <div class="main__item">
-                    <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" class="main__item-image" alt="">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo excepturi dolor rerum, atque numquam est modi omnis repellendus facilis, dolores non placeat? Enim incidunt ducimus facilis provident culpa cupiditate ea aliquam, harum sed, eius natus laboriosam? Minima consequuntur, perspiciatis ea quasi, recusandae ullam, repellendus repudiandae incidunt modi delectus voluptatum reiciendis!</span>
-                </div>
-                <div class="main__item" id="second">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, consequuntur exercitationem! Alias possimus nam ad pariatur incidunt voluptatum dolore officiis id nesciunt nihil saepe placeat facere explicabo, dolores, adipisci, sed rerum sunt veniam expedita? Facilis neque rem nesciunt quasi nam omnis, dignissimos quidem? Voluptatum, eum blanditiis illum a sed porro?</span>
-                    <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" class="main__item-image" alt="">
-                </div>
-                <div class="main__item">
-                    <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" class="main__item-image" alt="">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veritatis aliquam deserunt corrupti quos, obcaecati, odio suscipit, tempora est cupiditate dolore. Iste et fugiat laborum sit repudiandae incidunt facere dolorem esse est amet, tenetur odio quam ratione reiciendis perferendis sequi ipsam, architecto temporibus nostrum mollitia molestiae exercitationem! Veritatis, nam porro!</span>
-                </div>
-            </div>
-        </section>
-    </main>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <header>
+                <nav class="navigation container__wrapper">
+                    <div class="header__container">
+                        <svg viewBox="0 0 100 80" class="header__menu-burger" style="fill: white;" width="40" height="40">
+                            <rect width="100" height="8" class="line"></rect>
+                            <rect y="30" width="100" height="8" class="line"></rect>
+                            <rect y="60" width="100" height="8" class="line"></rect>
+                        </svg>
+                        <button class="header__item" id="home">
+                            Главная
+                        </button>
+                        <button class="header__item" id="about">
+                            О нас
+                        </button>
+                        <button class="header__item" id="achievements">
+                            Наши достижения
+                        </button>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <section id="hero__section">
+                    <div class="hero">
+                        <img src="./img/7B.jpg" class="hero__logo" alt="7B">
+                        <span class="hero__desc">
+                            <h2>Наш 7 "Б"</h2>
+                            <p>
+                               Дружные и активные ребята! Поддержим и поможем, 
+                               ведь самое главное настрой, а он у нас есть! Любим изучать новое,
+                               творить, вооплащать мечты в реальную жизнь - это у нас хорошо получается!
+                            </p>
+                        </span>
+                        <button class="arrow">
+                             <img src="./img/next-arrow.png" alt="next-arrow">
+                        </button>
+                    </div>
+                </section>
+                <section id="about__section">
+                    <div class="main__container">
+                        <div class="main__item">
+                            <img src="./img/life-is-beautiful.jpg" class="main__item-image" alt="">
+                            <span>
+                                <h3 class="title">Жизнь прекрасна!</h3>
+                                <p>
+                                    Это время, которое полно чудес и возможностей,
+                                    ожидающих своего открытия. Жизнь - это дар, 
+                                    который нам дан, и мы должны использовать его
+                                    на максимум!
+                                </p>
+                            </span>
+                        </div>
+                        <div class="main__item" id="second">
+                            <img src="./img/life-is-beautiful.jpg" class="main__item-image" alt="">
+                            <span>
+                                <h3 class="title">Жизнь прекрасна!</h3>
+                                <p>
+                                    Это время, которое полно чудес и возможностей,
+                                    ожидающих своего открытия. Жизнь - это дар, 
+                                    который нам дан, и мы должны использовать его
+                                    на максимум!
+                                </p>
+                            </span>
+                        </div>
+                        <div class="main__item">
+                            <img src="./img/life-is-beautiful.jpg" class="main__item-image" alt="">
+                            <span>
+                                <h3 class="title">Жизнь прекрасна!</h3>
+                                <p>
+                                    Это время, которое полно чудес и возможностей,
+                                    ожидающих своего открытия. Жизнь - это дар, 
+                                    который нам дан, и мы должны использовать его
+                                    на максимум!
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
 
-    <script>
-        d
-    </script>
-
-    <script src="./js/burger.js" type="module"></script>
-    <script src="./js/hero.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+
+    <script src="./js/burger.js"></script>
+    <script src="./js/hero.js"></script>
+    <script src="./js/scrollsmoother.js"></script>
 </body>
 </html>

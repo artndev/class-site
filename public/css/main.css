@@ -29,3 +29,22 @@
     order: 1;
   }
 }
+
+.title {
+  padding-bottom: 1rem;
+  display: inline-block;
+  transition: all 0.15s ease-in-out;
+  overflow: hidden;
+}
+.title::after {
+  display: block;
+  content: "";
+  margin-top: 0.1rem;
+  height: 0.1rem;
+  transition: inherit;
+  transform: scaleX(30%) translateX(-130%);
+  background-color: #e263a9;
+}
+.title:hover::after {
+  transform: scaleX(50%);
+}
