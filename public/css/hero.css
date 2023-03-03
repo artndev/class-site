@@ -1,0 +1,28 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  color: #f0e7e7;
+  max-width: 600px;
+  font-size: 0.9em;
+}
+
+.hero__logo {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.hero__desc {
+  z-index: 1;
+}
+
+.arrow img {
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(90deg);
+}

@@ -1,0 +1,28 @@
+.main__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 2rem;
+}
+
+.main__item-image {
+    border-radius: 0.5vh;
+    width: 200px;
+    object-fit: cover;
+}
+
+.main__item {
+    display: flex;
+    color: white;
+    gap: 2rem;
+    text-align: left;
+
+    @media screen and (max-width: 460px) { 
+        flex-direction: column-reverse; 
+        justify-content: center;
+        align-items: center;
+        .main__item-image { order: 1;}
+    }
+}
