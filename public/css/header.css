@@ -48,11 +48,15 @@
 }
 
 .header__item {
+  font-size: 1em;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
   user-select: none;
   transition: all 0.15s ease-in-out;
   padding: 1rem;
   width: max-content;
+  color: #f0e7e7;
 }
 .header__item a {
   color: #f0e7e7;
@@ -61,6 +65,7 @@
   content: "";
   display: block;
   background-color: #f0e7e7;
+  margin-top: 0.5rem;
   height: 0.01rem;
   transition: inherit;
   transform: scaleX(0);

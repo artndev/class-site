@@ -11,7 +11,7 @@
     text-align: center;
     color: $secondary-color;
     max-width: 600px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .hero__logo {
@@ -19,12 +19,19 @@
     height: 15rem;
     border-radius: 50%;
     z-index: 2;
+    border: 2px dashed $secondary-color;
 }
 
 .hero__desc { z-index: 1; }
 
-.arrow img {
-    width: 2rem;
-    height: 2rem;
-    transform: rotate(90deg);
+.arrow {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    img {
+        width: 2rem;
+        height: 2rem;
+        transform: rotate(90deg);
+    }
 }

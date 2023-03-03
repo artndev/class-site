@@ -51,11 +51,15 @@
 }
 
 .header__item {
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
     user-select: none;
     transition: all .15s ease-in-out;
     padding: 1rem;
     width: max-content;
+    color: $secondary-color;
 
     a { color: $secondary-color; }
 
@@ -63,6 +67,7 @@
         content: '';
         display: block;
         background-color: $secondary-color;
+        margin-top: 0.5rem;
 
         height: .01rem;
         transition: inherit;
