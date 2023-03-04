@@ -1,0 +1,61 @@
+@import "./vars";
+
+
+.achievements__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem;
+
+    @media screen and (max-width: 460px) { 
+        flex-direction: column;
+    }
+}
+
+.achievements__item-image {
+    min-height: 300px;
+    width: 200px;
+    object-fit: cover;
+    object-position: 100% 0%;
+}
+
+.achievements__item {
+    display: flex;
+    color: white;
+    gap: 2rem;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5vh;
+
+    @media screen and (max-width: 460px) { 
+        flex-direction: column-reverse; 
+        justify-content: center;
+        align-items: center;
+
+        .achievements__item-image { order: 1;}
+    }
+
+    .achievements__title {
+        width: max-content;
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        transform: translateX(-50%);
+        text-shadow: 1px 0 1px #000, 
+        0 1px 1px #000, 
+        -1px 0 1px #000, 
+        0 -1px 1px #000;
+        font-size: medium;
+    }
+
+    .achievements__item-image { transition: all 1s ease-in-out; }
+
+    &:hover {
+        .achievements__item-image {
+            transform: scale(1.1);
+            object-position: 0% 100%;
+        }
+    }
+}

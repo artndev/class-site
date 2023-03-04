@@ -9,20 +9,21 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/achievements.css">
 </head>
 <body>
     <div id="smooth-wrapper">
         <div id="smooth-content">
             <header>
-                <nav class="navigation container__wrapper">
+                <nav class="navigation header__wrapper">
                     <div class="header__container">
                         <svg viewBox="0 0 100 80" class="header__menu-burger" style="fill: white;" width="40" height="40">
                             <rect width="100" height="8" class="line"></rect>
                             <rect y="30" width="100" height="8" class="line"></rect>
                             <rect y="60" width="100" height="8" class="line"></rect>
                         </svg>
-                        <button class="header__item" id="home">
+                        <button class="header__item" id="hero">
                             Главная
                         </button>
                         <button class="header__item" id="about">
@@ -39,7 +40,7 @@
                     <div class="hero">
                         <img src="./img/7B.jpg" class="hero__logo" alt="7B">
                         <span class="hero__desc">
-                            <h2>Наш 7 "Б"</h2>
+                            <h1>Наш 7 "Б"</h1>
                             <p>
                                Дружные и активные ребята! Поддержим и поможем, 
                                ведь самое главное настрой, а он у нас есть! Любим изучать новое,
@@ -52,11 +53,13 @@
                     </div>
                 </section>
                 <section id="about__section">
-                    <div class="main__container">
-                        <div class="main__item">
-                            <img src="./img/life-is-beautiful.jpg" class="main__item-image" alt="">
+                    <h1 style="color: white;">О нас 😎</h1>
+    
+                    <div class="about__container">
+                        <div class="about__item">
+                            <img src="./img/cards/life-is-beautiful.jpg" class="about__item-image" alt="">
                             <span>
-                                <h3 class="title">Жизнь прекрасна!</h3>
+                                <h3 class="title bg-pink">Жизнь прекрасна!</h3>
                                 <p>
                                     Это время, которое полно чудес и возможностей,
                                     ожидающих своего открытия. Жизнь - это дар, 
@@ -65,10 +68,10 @@
                                 </p>
                             </span>
                         </div>
-                        <div class="main__item" id="second">
-                            <img src="./img/life-is-beautiful.jpg" class="main__item-image" alt="">
+                        <div class="about__item" id="second">
+                            <img src="./img/cards/irina-aleksandrovna.jpg" class="about__item-image" alt="">
                             <span>
-                                <h3 class="title">Жизнь прекрасна!</h3>
+                                <h3 class="title bg-orange">Веселью нет предел!</h3>
                                 <p>
                                     Это время, которое полно чудес и возможностей,
                                     ожидающих своего открытия. Жизнь - это дар, 
@@ -77,10 +80,10 @@
                                 </p>
                             </span>
                         </div>
-                        <div class="main__item">
-                            <img src="./img/life-is-beautiful.jpg" class="main__item-image" alt="">
+                        <div class="about__item">
+                            <img src="./img/cards/elena-anatolevna.jpg" class="about__item-image" alt="">
                             <span>
-                                <h3 class="title">Жизнь прекрасна!</h3>
+                                <h3 class="title bg-red">Лучшие из лучших!</h3>
                                 <p>
                                     Это время, которое полно чудес и возможностей,
                                     ожидающих своего открытия. Жизнь - это дар, 
@@ -91,6 +94,25 @@
                         </div>
                     </div>
                 </section>
+                
+                <section id="achievements__section">
+                    <h1 style="color: white;">Наши достижения 💫</h1>
+    
+                    <div class="achievements__container">
+                        <div class="achievements__item">
+                            <img src="./img/cards/sing-for-the-world.jpg" class="achievements__item-image" alt="">
+                            <h3 class="achievements__title">Самые громкие!</h3>
+                        </div>
+                        <div class="achievements__item">
+                            <img src="./img/cards/volleyball-competition.jpg" class="achievements__item-image" alt="">
+                            <h3 class="achievements__title">Самые спортивные!</h3>
+                        </div>
+                        <div class="achievements__item">
+                            <img src="./img/cards/vpr-6.jpg" class="achievements__item-image" alt="">
+                            <h3 class="achievements__title">Самые умные!</h3>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
     </div>
@@ -98,8 +120,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
 
-    <script src="./js/burger.js"></script>
+    <script src="./js/header.js"></script>
     <script src="./js/hero.js"></script>
-    <script src="./js/scrollsmoother.js"></script>
 </body>
 </html>

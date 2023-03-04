@@ -2,9 +2,16 @@
 .header__container {
   padding: 1rem;
   color: #f0e7e7;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: min-content;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #1d1d1d;
 }
 
-.container__wrapper {
+.header__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +61,7 @@
   cursor: pointer;
   user-select: none;
   transition: all 0.15s ease-in-out;
-  padding: 1rem;
+  padding: 0.5rem;
   width: max-content;
   color: #f0e7e7;
 }
