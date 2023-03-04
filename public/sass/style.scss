@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "./vars";
+
 
 * {
     margin: 0;
@@ -30,6 +32,42 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 a { text-decoration: none; }
+
+
+.title { 
+  padding-bottom: 1rem;
+  display: inline-block;
+  transition: all .15s ease-in-out;
+  overflow: hidden;
+
+  &::after {
+      display: block;
+      content: '';
+      margin-top: 0.1rem;
+
+      height: 0.1rem;
+      transition: inherit;
+      transform: scaleX(30%) translateX(-130%);
+      background-color: $secondary-color;
+  }
+
+  &:hover {
+      &::after { transform: scaleX(50%); }
+  }
+
+  &.bg-orange {
+    &::after { background-color: #e28e11; }
+  }
+
+  &.bg-pink {
+    &::after { background-color: #e263a9; }
+  }
+
+  &.bg-red {
+    &::after { background-color: #e90141; }
+  }
+}
