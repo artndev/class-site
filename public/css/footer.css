@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap");
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.7em;
+  gap: 1rem;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+
+.social__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social__media-icon {
+  width: 2rem;
+  height: 2rem;
+  transition: transform 0.15s ease-in-out;
+}
+.social__media-icon:hover {
+  transform: scale(0.95);
+}
