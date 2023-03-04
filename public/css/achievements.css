@@ -47,7 +47,7 @@
   font-size: medium;
 }
 .achievements__item .achievements__item-image {
-  transition: all 1s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 .achievements__item:hover .achievements__item-image {
   transform: scale(1.1);
