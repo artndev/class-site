@@ -12,10 +12,6 @@
 body {
     background-color: #1d1d1d;
     font-family: "Poppins", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 main { 
@@ -41,6 +37,7 @@ a { text-decoration: none; }
 .title { 
   padding-bottom: 1rem;
   display: inline-block;
+  width: max-content;
   transition: all .15s ease-in-out;
   overflow: hidden;
 
