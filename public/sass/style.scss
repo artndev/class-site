@@ -31,8 +31,6 @@ section {
   flex-direction: column;
 }
 
-a { text-decoration: none; }
-
 
 .title { 
   padding-bottom: 1rem;
@@ -40,6 +38,9 @@ a { text-decoration: none; }
   width: max-content;
   transition: all .15s ease-in-out;
   overflow: hidden;
+  user-select: none;
+  color: $secondary-color;
+  font-size: larger;
 
   &::after {
       display: block;
@@ -57,14 +58,19 @@ a { text-decoration: none; }
   }
 
   &.bg-orange {
-    &::after { background-color: #e28e11; }
+    &::after { background-color: $orange-color; }
   }
 
   &.bg-pink {
-    &::after { background-color: #e263a9; }
+    &::after { background-color: $pink-color; }
   }
 
   &.bg-red {
-    &::after { background-color: #e90141; }
+    &::after { background-color: $red-color; }
   }
+}
+
+.achievements__title, 
+.about__title {
+  color: $secondary-color;
 }

@@ -10,7 +10,7 @@
     text-align: center;
     color: $secondary-color;
     max-width: 600px;
-    font-size: 1em;
+    font-size: medium;
 }
 
 .hero__logo {
@@ -19,8 +19,6 @@
     border-radius: 50%;
     z-index: 2;
 }
-
-.hero__desc { z-index: 1; }
 
 .arrow {
     cursor: pointer;

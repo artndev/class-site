@@ -29,6 +29,7 @@
 .about__item {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   gap: 2rem;
   color: #f0e7e7;
 }
