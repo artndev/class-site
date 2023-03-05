@@ -28,16 +28,15 @@ section {
   flex-direction: column;
 }
 
-a {
-  text-decoration: none;
-}
-
 .title {
   padding-bottom: 1rem;
   display: inline-block;
   width: max-content;
   transition: all 0.15s ease-in-out;
   overflow: hidden;
+  user-select: none;
+  color: #f0e7e7;
+  font-size: larger;
 }
 .title::after {
   display: block;
@@ -59,4 +58,9 @@ a {
 }
 .title.bg-red::after {
   background-color: #e90141;
+}
+
+.achievements__title,
+.about__title {
+  color: #f0e7e7;
 }
