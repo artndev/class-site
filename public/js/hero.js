@@ -53,6 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
 next_arrow.addEventListener("click", () => {
     gsap.to(window, {
         duration: 1,
-        scrollTo: "#about__section"
+        scrollTo: !(screen.availWidth <= 460)
+            ? {y: "#about__section", offsetY: 100}
+            : "#about__section"
     })
 })
