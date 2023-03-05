@@ -8,25 +8,32 @@
 }
 
 .about__item-image {
-  border-radius: 0.5vh;
-  min-width: 200px;
+  overflow: hidden;
+  max-width: 200px;
   height: 150px;
-  object-fit: cover;
+  border-radius: 0.5vh;
+}
+
+.about__item-image img {
+  width: 100%;
+  height: auto;
+  transition: scale 3s ease-in-out;
+}
+.about__item-image img#second {
+  transform: translateY(-20%);
+}
+.about__item-image img:hover {
+  scale: 1.5;
 }
 
 .about__item {
   display: flex;
-  color: white;
+  justify-content: space-evenly;
   gap: 2rem;
-  text-align: left;
+  color: #f0e7e7;
 }
 @media screen and (max-width: 460px) {
   .about__item {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  .about__item .about__item-image {
-    order: 1;
+    flex-direction: column;
   }
 }
