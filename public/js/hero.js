@@ -1,11 +1,6 @@
-const hero_logo = document.querySelector(".hero__logo");
-const hero_desc = document.querySelector(".hero__desc");
-const next_arrow = document.querySelector(".arrow");
-
-
 document.addEventListener("DOMContentLoaded", () => {
     gsap.timeline({stagger: 0.1})
-        .fromTo(hero_logo, {
+        .fromTo(".hero__logo", {
             duration: 1,
             ease: "power1.inOut",
             transform: "translateX(-100%)",
@@ -16,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             transform: "translateX(0%)",
             opacity: 1
         })
-        .fromTo(hero_desc, {
+        .fromTo(".hero__desc", {
             duration: 1,
             ease: "power1.inOut",
             transform: "translateY(-100%)",
@@ -27,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             transform: "translateX(0%)",
             opacity: 1
         })
-        .fromTo(next_arrow, {
+        .fromTo(".arrow", {
             duration: 1,
             ease: "power1.inOut",
             transform: "translateY(-100%)",
@@ -39,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             opacity: 1
         })
     gsap.timeline({yoyo: true, repeat: -1}) 
-        .fromTo(next_arrow, {
+        .fromTo(".arrow", {
             duration: 1,
             ease: "power1.inOut",
             y: "-10"
@@ -50,11 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
         })
 })
 
-next_arrow.addEventListener("click", () => {
+$(".arrow").click(() => {
     gsap.to(window, {
         duration: 1,
-        scrollTo: !(screen.availWidth <= 460)
-            ? {y: "#about__section", offsetY: 100}
-            : "#about__section"
+        scrollTo: "#about__section"
     })
 })
