@@ -17,7 +17,7 @@
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
     background-color: $main-color;
     padding: 1rem;
-    color: $secondary-color;
+    color: $primary-color;
 
     @media screen and (max-width: 460px) {
         transform: translateX(80%);
@@ -31,7 +31,7 @@
     .header__menu-burger {
         display: none;
         position: absolute;
-        color: $secondary-color;
+        color: $primary-color;
         left: 1rem;
         top: 1rem;
         padding: 0 .6rem;
@@ -51,12 +51,12 @@
     transition: all .15s ease-in-out;
     padding: .5rem;
     width: max-content;
-    color: $secondary-color;
+    color: $primary-color;
 
     &::after {
         content: '';
         display: block;
-        background-color: $secondary-color;
+        background-color: $primary-color;
         margin-top: .5rem;
         height: .01rem;
         transition: inherit;

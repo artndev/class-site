@@ -13,7 +13,7 @@
 
 .achievements__item-image {
   min-height: 300px;
-  width: 250px;
+  width: 210px;
   object-fit: cover;
   object-position: 100% 0%;
 }

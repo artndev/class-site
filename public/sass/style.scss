@@ -43,7 +43,7 @@ section {
   transition: all .15s ease-in-out;
   overflow: hidden;
   user-select: none;
-  color: $secondary-color;
+  color: $primary-color;
   font-size: larger;
 
   &::after {
@@ -54,7 +54,7 @@ section {
       height: 0.1rem;
       transition: inherit;
       transform: scaleX(30%) translateX(-130%);
-      background-color: $secondary-color;
+      background-color: $primary-color;
   }
 
   &:hover {
@@ -76,5 +76,5 @@ section {
 
 .achievements__title, 
 .about__title {
-  color: $secondary-color;
+  color: $primary-color;
 }
