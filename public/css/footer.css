@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100vw;
+  height: 10rem;
+  background-color: #1a1a1a;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: medium;
+  color: #f0e7e7;
+  padding: 7rem;
+}
+.footer__wrapper .footer__container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+  gap: 5rem;
+  height: inherit;
+}
+.footer__wrapper .footer__container .social__media-link:hover {
+  text-decoration: underline;
+}
+.footer__wrapper .footer__container .madeby {
+  width: max-content;
+  color: rgba(240, 231, 231, 0.9);
+}
+.footer__wrapper .school {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: small;
+}

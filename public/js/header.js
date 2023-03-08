@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     function openHeader() {
         gsap.timeline({onComplete: () => {
-            $( "body" ).css( "overflow", "hidden" );
+            $( "body" ).css( "overflow-y", "hidden" );
             header.classList.remove( "hide" );
         }})
             .to(header, {
@@ -26,23 +26,24 @@ document.addEventListener("DOMContentLoaded", () => {
             .to(lines[1], {
                 duration: 0.5,
                 ease: "power1.inOut",
-                opacity: 0
+                backgroundColor: "transparent"
             }, "<")
             .to(lines[0], {
                 duration: 0.5,
                 ease: "power1.inOut",
-                transform: "rotate(50deg) translateY(-18px) translateX(40px)"
+                transform: "translate(-5px, 18px) rotate(50deg)"
             }, "<")
             .to(lines[2], {
                 duration: 0.5,
                 ease: "power1.inOut",
-                transform: "rotate(-50deg) translateY(24px) translateX(-50px)"
+                transform: "translate(-5px, -18px) rotate(-50deg)"
             }, "<");
     }
+
     
     function closeHeader() {
         gsap.timeline({onComplete: () => {
-            $( "body" ).css( "overflow", "visible" );
+            $( "body" ).css( "overflow-y", "visible" );
             header.classList.add( "hide" );
         }})
             .to(header, {
@@ -54,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .to(lines[1], {
                 duration: 0.5,
                 ease: "power1.inOut",
-                opacity: 1
+                backgroundColor: "#f0e7e7"
             }, "<")
             .to(lines[0], {
                 duration: 0.5,

@@ -13,6 +13,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 main {
@@ -22,7 +23,7 @@ main {
   align-items: center;
   max-width: 1200px;
   gap: 5rem;
-  margin: 5rem;
+  margin-top: 5rem;
 }
 
 section {
@@ -70,6 +71,7 @@ a {
 }
 
 .achievements__title,
-.about__title {
+.about__title,
+.madeby {
   color: #f0e7e7;
 }
