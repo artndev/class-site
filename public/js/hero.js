@@ -3,13 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const arrow = document.querySelector( ".arrow" );
 
     // ? Hero nodes
-    const hero = document.querySelector( "#hero" );
     const hero_logo = document.querySelector( ".hero__logo" );
     const hero_desc = document.querySelector( ".hero__desc" );
-
-    // ? Burger && lines of burger
-    const burger = document.querySelector( ".header__menu-burger" );
-    const lines = Array.from( document.querySelectorAll(".line") );
 
 
     gsap.timeline({ stagger: 0.1 })

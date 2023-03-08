@@ -25,7 +25,6 @@
         width: 100%;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0);
-        .header__item { font-size: x-large; }
     }
 
     .header__menu-burger {
@@ -38,13 +37,13 @@
         height: 2.5rem;
         width: 3rem;
 
-        @media screen and (max-width: 460px) { display: flex; }
-
         .line {
             width: 100%;
             background-color: $primary-color;
             height: 2px;
         }
+
+        @media screen and (max-width: 460px) { display: flex; }
      }    
 
      .header__item {
@@ -57,8 +56,6 @@
         padding: .5rem;
         width: max-content;
         color: $primary-color;
-
-        @media screen and (max-width: 460px) { font-size: x-large; }
     
         &::after {
             content: '';
@@ -75,5 +72,7 @@
     
             &::after { transform: scaleX(1); }
         }
+
+        @media screen and (max-width: 460px) { font-size: x-large; }
     }
 }
