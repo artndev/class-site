@@ -1,31 +1,44 @@
-// @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import "./vars";
 
 
-// footer { 
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-//     font-family: 'Raleway', sans-serif;
-//     color: transparentize(white, 0.5);
-//     font-size: 0.7em;
-//     gap: 1rem;
-//     width: 100%; 
-//     padding-bottom: 5rem;
-// }
-
-// .social__media {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 2rem;
-// }
 
 
-// .social__media-icon {
-//     width: 2rem;
-//     height: 2rem;
-//     transition: transform .15s ease-in-out;
+.footer__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100vw;
+    height: 10rem;
+    background-color: darken($main-color, 1);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: medium;
+    color: $primary-color;
+    padding: 7rem;
 
-//     &:hover { transform: scale(.95); }
-// }
+    .footer__container { 
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        align-items: center; 
+        gap: 5rem;
+        height: inherit;
+        
+        .social__media-link:hover { text-decoration: underline; }
+        
+        .madeby { 
+            width: max-content;
+            color: transparentize($primary-color, .2); 
+        }
+    }
+
+    .school {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: small;
+    }
+}
+
